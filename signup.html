@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin: 10px 0;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button.google-signup {
+            background-color: #DB4437;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Company Secretary (CS) - Sign up to apply now</h1>
+        <p>Kochi | ₹2,000/month</p>
+        <button class="google-signup">Sign up with Google</button>
+        <p>OR</p>
+        <form id="signup-form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <p>By signing up, you agree to our <a href="#">Terms and Conditions</a>.</p>
+            <button type="submit">Sign up</button>
+        </form>
+        <p>Already registered? <a href="#">Login</a></p>
+    </div>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+        });
+        
+    </script>
+</body>
+</html>
+
